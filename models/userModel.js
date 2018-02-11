@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost:27017/chatAppDB').then(()=>{
     console.log('connected to database...');
-});
+}).catch((err)=>{console.log('err in connecting database...',err)});
 
 let UserSchema = new mongoose.Schema({
     name:{
