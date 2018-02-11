@@ -5,7 +5,7 @@ const expressSession = require('express-session');
 const {router} = require('./routes');
 
 let app= express();
-let port=5454 || process.env.port;
+let port=  process.env.port || 5454;
 
 app.use(bodyParser.json());
 app.use(expressSession({

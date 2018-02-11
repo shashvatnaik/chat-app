@@ -7,19 +7,19 @@ mongoose.connect('mongodb://localhost:27017/chatAppDB').then(()=>{
 let UserSchema = new mongoose.Schema({
     name:{
         type:String,
-        required
+        required:true
     },
     email:{
         type:String,
-        required
+        required:true
     },
     password:{
         type:String,
-        required
+        required:true
     },
     age:{
         type:Number,
-        required
+        required:true
     },google:{}
 });
 
